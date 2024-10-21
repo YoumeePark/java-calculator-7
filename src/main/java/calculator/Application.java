@@ -47,12 +47,9 @@ public class Application {
             throw new IllegalArgumentException("구분자가 비어있습니다.");
         }
 
-        String numbersPart = parts[1]; // 숫자 부분
+        String numbersPart = parts[1];
         return numbersPart.split(Pattern.quote(delimiter));
     }
-
-
-
 
     private static int sum(String[] numbers) {
         int result = 0;
